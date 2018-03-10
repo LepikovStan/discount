@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <style>
+        .layout {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 24px
+        }
+    </style>
+</head>
+<body>
+    <script>
+        DSC = {
+            goods: JSON.parse('{{.GoodsJSON}}')
+        };
+
+        console.log(DSC)
+    </script>
+    <script>
+        $('body').append(
+            '<div class="layout">' +
+                '<h1>Name</h1>' +
+                '<table>' +
+                    '<tr><th></th><th>Mark 1</th><th>Mark 2</th><th>Mark 3</th><th>Mark 4</th><th>Mark 5</th><th>Mark 6</th></tr>' +
+                    '<tr><td>22 march</td><td>111 r</td><td>111 r</td><td>111 r</td><td>111 r</td><td>111 r</td><td>111 r</td></tr>' +
+                    '<tr><td>22 march</td><td>111 r</td><td>111 r</td><td>111 r</td><td>111 r</td><td>111 r</td><td>111 r</td></tr>' +
+                    '<tr><td>22 march</td><td>111 r</td><td>111 r</td><td>111 r</td><td>111 r</td><td>111 r</td><td>111 r</td></tr>' +
+                    '<tr><td>22 march</td><td>111 r</td><td>111 r</td><td>111 r</td><td>111 r</td><td>111 r</td><td>111 r</td></tr>' +
+                    '<tr><td>22 march</td><td>111 r</td><td>111 r</td><td>111 r</td><td>111 r</td><td>111 r</td><td>111 r</td></tr>' +
+                    '<tr><td>22 march</td><td>111 r</td><td>111 r</td><td>111 r</td><td>111 r</td><td>111 r</td><td>111 r</td></tr>' +
+                '</table>' +
+            '</div>'
+        )
+        // DSC.goods.map(function(good) {
+        //     return '<>'
+        // });
+    </script>
+</body>
+</html>
